@@ -12,6 +12,6 @@ val data = Seq(('James','','Smith','1991-04-01','M',3000),
 )
 
 val columns = Seq("firstname","middlename","lastname","dob","gender","salary")
-df = spark.createDataFrame(data), schema = columns).toDF(columns:_*)
+val df = spark.createDataFrame(data), schema = columns).toDF(columns:_*)
 
 df.show() 
