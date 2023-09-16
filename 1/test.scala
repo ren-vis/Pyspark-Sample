@@ -1,8 +1,5 @@
 import org.apache.spark.sql.SparkSession
-val spark:SparkSession = SparkSession.builder()
-      .master("local[1]")
-      .appName("SparkByExamples.com")
-      .getOrCreate()   
+val spark:SparkSession = SparkSession.builder().master("local[1]").appName("SparkByExamples.com").getOrCreate()   
 
 val data = Seq(('James','','Smith','1991-04-01','M',3000),
   ('Michael','Rose','','2000-05-19','M',4000),
